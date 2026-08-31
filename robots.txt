@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gdys1122.github.io/sitemap.xml
