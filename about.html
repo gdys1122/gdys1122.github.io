@@ -268,6 +268,30 @@ footer{background:#071a2a;color:#9db6c9;padding:56px 0 0}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto}
 }
+
+/* ===== 核心业务下拉菜单 ===== */
+.nav-drop-wrap{position:relative}
+.nav-drop-trigger{display:inline-flex;align-items:center;gap:5px;font-size:15px;color:var(--text);padding:10px 13px;border-radius:12px;font-weight:500;transition:all .25s cubic-bezier(.4,0,.2,1)}
+.nav-drop-trigger .caret{width:14px;height:14px;stroke:var(--slate);transition:transform .25s}
+.nav-drop-wrap:hover .nav-drop-trigger{color:var(--teal);background:var(--mint-soft)}
+.nav-drop-wrap:hover .nav-drop-trigger .caret{transform:rotate(180deg)}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:250px;background:#fff;border-radius:14px;box-shadow:var(--shadow-lg);padding:8px;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .28s cubic-bezier(.4,0,.2,1);z-index:80;border:1px solid var(--line)}
+.nav-dropdown::before{content:"";position:absolute;top:-8px;left:0;right:0;height:8px}
+.nav-drop-wrap:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.nav-dropdown a{display:block;padding:12px 14px;border-radius:10px;transition:background .2s}
+.nav-dropdown a b{display:block;font-size:15px;color:var(--navy);font-weight:700;margin-bottom:3px}
+.nav-dropdown a span{display:block;font-size:12px;color:var(--slate);line-height:1.4}
+.nav-dropdown a:hover{background:var(--ice)}
+.nav-dropdown a:hover b{color:var(--teal)}
+.nav-dropdown a.active{background:#e3f0fa}
+.nav-dropdown a.active b{color:var(--navy);font-weight:800}
+@media(max-width:1024px){
+  .nav-drop-wrap{width:100%}
+  .nav-drop-trigger{width:100%;font-size:17px;padding:14px 12px}
+  .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;padding:4px 0 4px 14px;min-width:0;width:100%}
+  .nav-dropdown::before{display:none}
+  .nav-dropdown a{padding:12px 14px}
+}
 </style>
 
 <!-- 百度自动推送 -->
@@ -319,7 +343,13 @@ footer{background:#071a2a;color:#9db6c9;padding:56px 0 0}
     <nav class="nav-menu" id="navMenu">
           <a href="index.html">首页</a>
       <a href="about.html" class="active">关于我们</a>
-      <a href="business.html">核心业务</a>
+      <div class="nav-drop-wrap">
+        <a href="javascript:void(0)" class="nav-drop-trigger">核心业务<svg class="caret" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="env-division.html"><b>环境事业部</b><span>环境实验室 · 测试平台 · 节能方案</span></a>
+          <a href="mfg-division.html"><b>制造事业部</b><span>油压机 · 冷却塔 · 制造能力</span></a>
+        </div>
+      </div>
       <a href="tech.html">技术实力</a>
       <a href="cases.html">业绩案例</a>
       <a href="honor.html">资质荣誉</a>
