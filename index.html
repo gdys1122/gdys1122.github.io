@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广东衍胜自动化设备有限公司 | 只做最节能的试验设备</title>
+<meta name="description" content="广东衍胜自动化设备有限公司——专业从事环境参数精确控制与工业自动化集成系统的设计、开发、制造。以'只做最节能的试验设备'为使命，提供空调焓差室、水机实验室、环境实验室节能改造、储能与新能源热管理测试等整体解决方案。">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+/* ===== 设计令牌 ===== */
+:root{
+  --ink:#0b2233;
+  --navy:#0a3d62;
+  --navy-2:#0f4c75;
+  --steel:#1b6ca8;
+  --teal:#12876f;
+  --mint:#17b978;
+  --mint-soft:#e7f7ef;
+  --ice:#eef5fa;
+  --paper:#f8fafc;
+  --line:#dce6ee;
+  --text:#16283a;
+  --slate:#5e7286;
+  --white:#ffffff;
+  --font:'Noto Sans SC','Microsoft YaHei','PingFang SC',system-ui,sans-serif;
+  --shadow:0 10px 30px rgba(10,61,98,.10);
+  --shadow-lg:0 24px 60px rgba(10,61,98,.16);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+section{position:relative}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{line-height:1.3;color:var(--ink)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--teal);text-transform:uppercase;margin-bottom:18px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--mint)}
+.section-title{font-size:clamp(26px,3.4vw,40px);font-weight:900;letter-spacing:.01em}
+.section-sub{font-size:clamp(15px,1.6vw,17px);color:var(--slate);margin-top:14px;max-width:720px}
+
+/* ===== 顶栏 ===== */
+.topbar{background:var(--ink);color:#cfe0ec;font-size:13px;padding:8px 0;position:relative;z-index:60}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.topbar .slogan{color:var(--mint);font-weight:700;letter-spacing:.04em}
+.topbar .hotline{display:flex;align-items:center;gap:8px}
+.topbar .hotline svg{width:15px;height:15px;stroke:var(--mint)}
+.topbar a{color:#eaf3f8}
+.topbar a:hover{color:var(--mint)}
+
+/* ===== 导航 ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo{width:46px;height:46px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-size:19px;font-weight:900;color:var(--navy);letter-spacing:.02em}
+.brand-sub{font-size:11px;color:var(--slate);letter-spacing:.08em}
+.nav-menu{display:flex;gap:6px;align-items:center}
+.nav-menu a{font-size:15px;color:var(--text);padding:10px 13px;border-radius:8px;font-weight:500;transition:all .2s}
+.nav-menu a:hover{color:var(--teal);background:var(--mint-soft)}
+.nav-cta{margin-left:12px;background:var(--navy);color:#fff!important;padding:10px 20px!important;border-radius:8px;font-weight:700}
+.nav-cta:hover{background:var(--steel);color:#fff!important}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px}
+.nav-toggle svg{width:26px;height:26px;stroke:var(--navy)}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--ink)}
+.hero-bg{position:absolute;inset:0;background-image:url('https://aka.doubaocdn.com/s/P4QdVOEw8r');background-size:cover;background-position:center;opacity:.38}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(7,26,40,.96) 0%,rgba(7,26,40,.78) 42%,rgba(11,61,98,.45) 100%)}
+.hero .container{position:relative;z-index:2;padding-top:84px;padding-bottom:84px}
+.hero-inner{max-width:760px}
+.hero .eyebrow{color:var(--mint)}
+.hero .eyebrow::before{background:var(--mint)}
+.hero h1{color:#fff;font-size:clamp(34px,5.2vw,60px);font-weight:900;letter-spacing:.02em;margin-bottom:10px}
+.hero .hero-en{font-size:clamp(13px,1.4vw,16px);letter-spacing:.34em;color:#8fd4b4;font-weight:500;margin-bottom:22px;text-transform:uppercase}
+.hero p.lead{font-size:clamp(16px,1.9vw,20px);color:#d7e6f2;max-width:660px;margin-bottom:34px;font-weight:300}
+.hero-stats{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:38px}
+.hstat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px 22px;min-width:150px;backdrop-filter:blur(4px)}
+.hstat b{display:block;font-size:clamp(24px,3vw,34px);font-weight:900;color:#5fe0ab;line-height:1.15}
+.hstat span{font-size:13px;color:#cfe0ec}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:16px;padding:15px 30px;border-radius:10px;border:2px solid transparent;cursor:pointer;transition:all .22s}
+.btn-primary{background:var(--mint);color:#04231a}
+.btn-primary:hover{background:#23cd93;transform:translateY(-2px);box-shadow:0 12px 28px rgba(23,185,120,.35)}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.btn svg{width:18px;height:18px}
+
+/* 签名元素：节能仪表盘 */
+.gauge-wrap{position:absolute;right:6%;top:50%;transform:translateY(-50%);z-index:2;width:330px;display:none;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
+@media(min-width:1180px){.gauge-wrap{display:block}}
+
+/* ===== 区块通用 ===== */
+.section{padding:96px 0}
+.section.alt{background:var(--paper)}
+.section.dark{background:var(--ink);color:#d7e6f2}
+.section.dark .section-title{color:#fff}
+.section.dark .section-sub{color:#9db6c9}
+.section-head{max-width:760px;margin-bottom:56px}
+
+/* ===== 关于我们 ===== */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.about-copy p{margin-bottom:16px;color:#33475c}
+.about-copy strong{color:var(--navy)}
+.about-data{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.adata{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 20px;box-shadow:var(--shadow)}
+.adata b{font-size:clamp(24px,2.8vw,32px);font-weight:900;color:var(--navy);line-height:1.1}
+.adata b em{font-style:normal;color:var(--mint);font-size:.62em;font-weight:700}
+.adata span{font-size:13px;color:var(--slate);display:block;margin-top:6px}
+.mission{background:var(--ink);border-radius:18px;color:#fff;padding:34px;margin-top:34px;position:relative;overflow:hidden}
+.mission::before{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(23,185,120,.35),transparent 70%)}
+.mission b{color:#5fe0ab;font-size:18px}
+.mission p{color:#d7e6f2;margin-top:8px;font-weight:300}
+.mission .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.mission .tags span{border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:6px 15px;font-size:13px;color:#cfe0ec}
+.about-photo{margin-top:34px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-lg);position:relative}
+.about-photo img{width:100%;object-fit:cover;aspect-ratio:16/9;transition:transform .5s}
+.about-photo:hover img{transform:scale(1.03)}
+
+/* ===== 核心业务 ===== */
+.biz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.biz-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:all .25s;position:relative;overflow:hidden}
+.biz-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--mint);opacity:0;transition:opacity .25s}
+.biz-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#bcd9ea}
+.biz-card:hover::before{opacity:1}
+.biz-ico{width:52px;height:52px;border-radius:12px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.biz-ico svg{width:28px;height:28px;stroke:var(--teal)}
+.biz-card h3{font-size:19px;font-weight:700;margin-bottom:10px}
+.biz-card p{font-size:14px;color:var(--slate)}
+.biz-tag{display:inline-block;font-size:12px;color:var(--teal);background:var(--mint-soft);border-radius:100px;padding:3px 11px;margin-top:14px;font-weight:500}
+
+/* ===== 技术实力 ===== */
+.tech-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:64px}
+.tech-intro .img{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.tech-intro .img img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.tech-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.tp{display:flex;gap:13px;align-items:flex-start}
+.tp svg{width:22px;height:22px;flex:none;stroke:var(--mint);margin-top:3px}
+.tp b{font-size:15px;display:block}
+.tp span{font-size:13px;color:var(--slate)}
+.tech-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;transition:all .25s;display:flex;flex-direction:column}
+.tcard:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.tcard .num{font-size:13px;font-weight:900;color:var(--mint);letter-spacing:.08em;margin-bottom:12px}
+.tcard h4{font-size:18px;font-weight:700;margin-bottom:10px}
+.tcard p{font-size:14px;color:var(--slate);flex:1}
+.tcard .hl{font-size:13px;color:var(--teal);font-weight:700;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+
+/* 能耗对比 */
+.energy{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px;margin-top:30px;box-shadow:var(--shadow)}
+.energy h3{font-size:22px;font-weight:900;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.energy .sub{color:var(--slate);font-size:14px;margin-bottom:30px}
+.energy-bars{display:flex;flex-direction:column;gap:26px}
+.ebar .eb-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.ebar .eb-head b{font-size:15px}
+.ebar .eb-head span{font-size:13px;color:var(--slate)}
+.eb-track{display:flex;align-items:center;gap:14px}
+.eb-track .bar{flex:1;height:18px;border-radius:10px;background:#e6eef4;position:relative;overflow:hidden}
+.eb-track .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:10px;background:linear-gradient(90deg,var(--steel),var(--mint))}
+.eb-track .pct{width:64px;font-weight:900;font-size:18px;color:var(--teal);text-align:right}
+.eb-track .old{font-size:12px;color:var(--slate);width:96px}
+
+/* ===== 业绩 / 案例 ===== */
+.case-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.clients{display:flex;flex-wrap:wrap;gap:12px}
+.client{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:14px 20px;font-weight:700;font-size:15px;color:var(--navy);box-shadow:var(--shadow);transition:all .2s;display:flex;align-items:center;gap:8px}
+.client svg{width:18px;height:18px;stroke:var(--mint);flex:none}
+.client:hover{color:var(--teal);transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--mint)}
+.case-list{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.case-item{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-left:3px solid var(--mint);border-radius:10px;padding:16px 18px;transition:all .2s}
+.case-item:hover{box-shadow:var(--shadow);transform:translateX(4px)}
+.case-item .yr{font-size:12px;font-weight:900;color:var(--steel);background:#e6f2fa;border-radius:6px;padding:3px 9px;flex:none;white-space:nowrap;margin-top:3px}
+.case-item b{font-size:15px;display:block}
+.case-item span{font-size:13px;color:var(--slate)}
+.case-more{font-size:13px;color:var(--teal);font-weight:700;margin-top:16px}
+
+/* ===== 资质 ===== */
+.honor-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.honor{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 22px;text-align:center;transition:all .25s}
+.honor:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px)}
+.honor .hico{width:58px;height:58px;margin:0 auto 16px;border-radius:14px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center}
+.honor .hico svg{width:32px;height:32px;stroke:var(--teal)}
+.honor b{font-size:16px;color:var(--ink);display:block;line-height:1.5}
+.honor span{font-size:13px;color:var(--slate);display:block;margin-top:8px;line-height:1.7}
+.standard-box{background:var(--ice);border-radius:18px;padding:34px;margin-top:28px;border:1px solid #cfe3f0}
+.standard-box h4{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:6px}
+.standard-box .st{font-size:15px;color:#33475c;font-weight:500;margin-bottom:8px}
+.standard-box .st:last-child{margin-bottom:0}
+.patent-box{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:34px;margin-top:28px}
+.patent-box h4{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.patent-box h4 svg{width:22px;height:22px;stroke:var(--teal)}
+.patent-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.patent-item{background:var(--ice);border-radius:12px;padding:16px 18px;border:1px solid #cfe3f0}
+.patent-item b{font-size:13px;color:var(--slate);display:block;margin-bottom:6px;font-weight:600}
+.patent-item span{font-size:15px;color:var(--ink);font-weight:700;line-height:1.5;display:block}
+.patent-item.full{grid-column:1/-1;text-align:center;background:var(--mint-soft);border-color:#b9e6d6}
+.patent-item.full span{font-size:18px;color:var(--navy)}
+
+/* ===== 服务保障 ===== */
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:34px}
+.svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:30px 26px;transition:all .25s}
+.svc:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.svc .snum{font-size:42px;font-weight:900;color:var(--mint);line-height:1}
+.svc b{display:block;font-size:19px;color:#fff;margin:14px 0 12px}
+.svc ul{list-style:none}
+.svc li{font-size:14px;color:#cfe0ec;padding:7px 0 7px 24px;position:relative}
+.svc li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;border-radius:50%;background:var(--mint)}
+.service-banner{background:var(--mint);border-radius:18px;padding:30px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;color:#04231a}
+.service-banner b{font-size:clamp(18px,2.4vw,24px);font-weight:900;display:flex;align-items:center;gap:12px}
+.service-banner .ph{font-size:clamp(20px,2.6vw,30px);font-weight:900;letter-spacing:.02em}
+.service-banner .ph small{display:block;font-size:13px;font-weight:500}
+
+/* ===== 联系 ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch}
+.contact-info{display:flex;flex-direction:column;gap:18px}
+.citem{display:flex;gap:16px;align-items:flex-start}
+.citem .cico{width:46px;height:46px;flex:none;border-radius:12px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center}
+.citem .cico svg{width:24px;height:24px;stroke:var(--teal)}
+.citem b{font-size:15px;color:var(--ink);display:block}
+.citem span{font-size:15px;color:var(--slate)}
+.citem a{color:var(--teal);font-weight:700}
+.center-net{background:var(--ice);border-radius:18px;padding:30px;border:1px solid #cfe3f0}
+.center-net h4{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:18px}
+.net-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.net{background:var(--white);border-radius:12px;padding:14px 16px;border:1px solid var(--line)}
+.net b{font-size:14px;display:block;color:var(--navy)}
+.net span{font-size:12px;color:var(--slate)}
+
+/* ===== 页脚 ===== */
+footer{background:#071a2a;color:#9db6c9;padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:44px}
+.foot-brand b{font-size:20px;color:#fff;display:block;margin-bottom:14px}
+.foot-brand p{font-size:14px;line-height:1.9}
+.foot-col b{font-size:15px;color:#fff;display:block;margin-bottom:16px}
+.foot-col a{display:block;font-size:14px;padding:5px 0;transition:all .2s}
+.foot-col a:hover{color:var(--mint);padding-left:6px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ===== 响应式 ===== */
+@media(max-width:1024px){
+  .about-grid,.tech-intro,.case-wrap,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .biz-grid,.tech-cards{grid-template-columns:1fr 1fr}
+  .honor-grid{grid-template-columns:1fr 1fr}
+  .patent-grid{grid-template-columns:1fr 1fr}
+  .service-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-menu{position:fixed;top:74px;right:0;bottom:0;left:0;background:#fff;flex-direction:column;align-items:flex-start;padding:24px;gap:6px;transform:translateX(100%);transition:transform .3s;box-shadow:var(--shadow-lg);overflow-y:auto}
+  .nav-menu.open{transform:translateX(0)}
+  .nav-menu a{font-size:17px;width:100%;padding:14px 12px}
+  .nav-cta{margin-left:0;text-align:center}
+  .nav-toggle{display:block}
+}
+@media(max-width:640px){
+  .section{padding:64px 0}
+  .biz-grid,.tech-cards,.honor-grid,.service-grid,.about-data,.net-grid,.patent-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .hero{min-height:560px}
+  .hero-stats{gap:12px}
+  .hstat{min-width:130px;padding:14px 16px}
+  .energy{padding:26px 20px}
+  .service-banner{padding:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<div class="topbar">
+  <div class="container">
+    <span class="slogan">只做最节能的试验设备 · 中国节能协会会员单位</span>
+    <span class="hotline">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      7×24 服务热线：<a href="tel:18928129781">189 2812 9781</a>
+    </span>
+  </div>
+</div>
+
+<!-- ===== 导航 ===== -->
+<header class="nav">
+  <div class="container">
+    <a href="#home" class="brand">
+      <svg class="brand-logo" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect width="48" height="48" rx="12" fill="#0a3d62"/>
+        <path d="M13 15a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H16a3 3 0 0 1-3-3V15z" stroke="#5fe0ab" stroke-width="2.2"/>
+        <path d="M13 21h22M19 15v-3M29 15v-3" stroke="#5fe0ab" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="27" r="4.4" fill="#17b978"/>
+        <path d="M24 24.6l0 0" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">广东衍胜自动化设备</span>
+        <span class="brand-sub">YANSHENG AUTOMATION · 环境 + 测量</span>
+      </span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#business">核心业务</a>
+      <a href="#tech">技术实力</a>
+      <a href="#cases">业绩案例</a>
+      <a href="#honor">资质荣誉</a>
+      <a href="#service">服务保障</a>
+      <a href="#contact">联系我们</a>
+      <a href="#contact" class="nav-cta">获取方案报价</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">环境参数精确控制 · 工业自动化集成系统</span>
+      <h1>只做最节能<br>的试验设备</h1>
+      <div class="hero-en">Energy-saving environmental test equipment</div>
+      <p class="lead">广东衍胜自动化设备有限公司专注于环境实验室节能技术与自动化集成系统的设计、开发、制造，为全球检测装备行业提供"环境+测量"技术路线的整体测试平台。</p>
+      <div class="hero-stats">
+        <div class="hstat"><b>50%+</b><span>综合节能率，与传统实验室对比</span></div>
+        <div class="hstat"><b>15 度</b><span>空调焓差室额定制冷工况日耗电</span></div>
+        <div class="hstat"><b>60+</b><span>2025-2026 实验室项目业绩</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          咨询节能方案
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#tech" class="btn btn-ghost">了解核心技术</a>
+      </div>
+    </div>
+  </div>
+  <!-- 签名元素：节能仪表盘 -->
+  <div class="gauge-wrap">
+    <svg viewBox="0 0 340 300" fill="none">
+      <defs>
+        <linearGradient id="gaugeArc" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#1b6ca8"/>
+          <stop offset=".62" stop-color="#17b978"/>
+          <stop offset="1" stop-color="#5fe0ab"/>
+        </linearGradient>
+      </defs>
+      <path d="M40 240 A130 130 0 0 1 300 240" stroke="rgba(255,255,255,.14)" stroke-width="20" stroke-linecap="round"/>
+      <path d="M40 240 A130 130 0 0 1 300 240" stroke="url(#gaugeArc)" stroke-width="20" stroke-linecap="round" stroke-dasharray="226 408" stroke-dashoffset="0"/>
+      <path d="M170 240 L196 92" stroke="#5fe0ab" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="170" cy="240" r="12" fill="#0a3d62" stroke="#5fe0ab" stroke-width="5"/>
+      <text x="170" y="182" text-anchor="middle" fill="#5fe0ab" font-size="15" font-family="Noto Sans SC" font-weight="700">节能区 · 实测</text>
+      <text x="170" y="286" text-anchor="middle" fill="#fff" font-size="44" font-weight="900" font-family="Noto Sans SC">50%+</text>
+      <text x="170" y="308" text-anchor="middle" fill="#9db6c9" font-size="13" font-family="Noto Sans SC">集中冷站综合节能率</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== 关于我们 ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">关于衍胜</span>
+      <h2 class="section-title">扎根珠三角 · 服务全球检测装备行业</h2>
+      <p class="section-sub">公司总部位于"珠三角"核心地带——顺德，拥有办公、研发场地 600 平方米，生产装配和调试车间 3000 余平方米，是国家高新技术领域民营科技企业。</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>广东衍胜自动化设备有限公司是民营高新科技企业，专业从事<strong>环境参数精确控制与工业自动化集成系统</strong>的设计、开发、制造。公司以"<strong>只做最节能的试验设备</strong>"为使命，努力成为全球检测装备行业的主要品牌。</p>
+        <p>公司拥有目前全球先进节能的环境实验室节能技术，已研发出全球高效省电的<strong>空调焓差室</strong>——额定制冷工况下耗电量仅 <strong>15 度/天</strong>，每天用电费用可控制在 <strong>100 元以内</strong>。</p>
+        <p>公司已掌握制冷设备、储能产品、新能源汽车热管理、家用空调、电冰箱、洗衣机、洗碗机、热水器等产品测试所需的最先进节能高效环境控制技术，并积极展开推广和应用。</p>
+        <div class="mission">
+          <b>以"环境 + 测量"为技术路线</b>
+          <p>着力搭建各类产品测试平台，内研外引，集成专业技术和通用工程技术，满足客户的多场景研发和检测需求。</p>
+          <div class="tags">
+            <span>技术领先</span><span>做工精良</span><span>测量准确</span><span>运行可靠</span>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="https://aka.doubaocdn.com/s/38GUWVmYMS" alt="衍胜工程师在环境试验实验室调试检测设备">
+        </div>
+      </div>
+      <div class="about-data">
+        <div class="adata"><b>42<em>+</em></b><span>员工，大专以上学历占比 70%</span></div>
+        <div class="adata"><b>3600<em>㎡</em></b><span>研发 + 生产装配调试场地</span></div>
+        <div class="adata"><b>15<em>度</em></b><span>空调焓差室额定制冷日耗电</span></div>
+        <div class="adata"><b>100<em>元</em></b><span>焓差室每天用电费用以内</span></div>
+        <div class="adata"><b>6<em>大</em></b><span>产品测试领域技术平台</span></div>
+        <div class="adata"><b>3<em>项</em></b><span>ISO 体系认证 · 中国节能协会会员</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 核心业务 ===== -->
+<section class="section alt" id="business">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">核心业务</span>
+      <h2 class="section-title">覆盖多品类产品测试的节能环境实验室</h2>
+      <p class="section-sub">以节能、智能、精准为核心，为制冷家电、储能与新能源等领域的研发和检测提供整体解决方案。</p>
+    </div>
+    <div class="biz-grid">
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M3 9v6l9 5 9-5V9"/><path d="M12 14v6"/></svg></div>
+        <h3>空调焓差室 / 环境实验室</h3>
+        <p>全球高效省电焓差实验室，额定制冷工况日耗电仅 15 度。支持 2HP~12HP 及水机测试，可配 R290 全防爆、CVP 及动态能效测试。</p>
+        <span class="biz-tag">节能率 50%+</span>
+      </div>
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><rect x="5" y="5" width="14" height="14" rx="3"/></svg></div>
+        <h3>水机实验室 / 平衡环境型量热计</h3>
+        <p>10匹、12匹水机实验室，-30℃~70℃ 宽温域，水箱 5~70℃，欧标放水，支持水冷冷(热)水机组性能测试。</p>
+        <span class="biz-tag">-30~70℃ 宽温域</span>
+      </div>
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16M4 16h16M8 8v8M16 8v8"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg></div>
+        <h3>冰箱 / 家电产品测试平台</h3>
+        <p>冰箱实验室节能改造、多工位洗衣机实验室、洗碗机性能实验室，覆盖家用空调、冰箱、洗衣机、洗碗机、热水器全品类。</p>
+        <span class="biz-tag">多工位 · 高低温</span>
+      </div>
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+        <h3>储能 / 新能源汽车热管理测试</h3>
+        <p>面向储能产品与新能源汽车热管理的节能高效环境控制技术，支持多应力可靠性长运工况、高低温及温湿度综合测试。</p>
+        <span class="biz-tag">多应力可靠性</span>
+      </div>
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h10v12H3zM13 10h8v8h-8z"/><circle cx="7" cy="9" r="1"/><circle cx="7" cy="15" r="1"/></svg></div>
+        <h3>工业自动化集成系统</h3>
+        <p>环境参数精确控制与自动化集成系统的设计、开发、制造，AI 控制、无人值守、分布式电控，实现一键启动全自动工况运行。</p>
+        <span class="biz-tag">AI 控制 · 无人值守</span>
+      </div>
+      <div class="biz-card">
+        <div class="biz-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>节能改造与技术服务</h3>
+        <p>承接焓差室、工况室、水质实验室等各类环境实验室的节能改造、搬迁与升级，采用集中冷站技术实现综合节能率 50% 以上。</p>
+        <span class="biz-tag">集中冷站 · 超声波加湿</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 技术实力 ===== -->
+<section class="section" id="tech">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">技术实力</span>
+      <h2 class="section-title">七大核心技术 · 让节能成为标准</h2>
+      <p class="section-sub">对标全球先进空调实验室节能技术，在满足可靠性、准确性、测试效率的前提下，综合节能率可达 50% 以上。</p>
+    </div>
+
+    <div class="tech-intro">
+      <div class="img">
+        <img src="https://aka.doubaocdn.com/s/QVQQDlBrVQ" alt="焓差实验室节能测试装置">
+      </div>
+      <div>
+        <h3 style="font-size:24px;font-weight:900;margin-bottom:16px">超级节能技术 · 集中冷站</h3>
+        <p style="color:#33475c;font-size:15px">摒弃传统压冷机组模式，采用集中冷站技术，冷量可自动分配给室内侧、室外侧，<strong>冷量 0%~100% 无级可调</strong>，大幅降低电加热、电加湿和制冷机组耗电，综合节能率达 50%（相同工况同负载条件下与传统实验室对比）。</p>
+        <div class="tech-points">
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>电子膨胀阀调冷量</b><span>室内外按需分配，避免冷热抵消</span></div></div>
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>超声波加湿技术</b><span>满负荷仅耗电 500W，传统方式的 1/20</span></div></div>
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>并联集中冷站</b><span>多数工况单台压缩机同时满足内外侧负荷</span></div></div>
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>数码喷液冷却</b><span>精确控排气温度，延长压缩机寿命</span></div></div>
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>组合阀 + 热气旁通</b><span>热湿协同调节，缩短稳定时间</span></div></div>
+          <div class="tp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>经济器过冷</b><span>低温工况进一步提升能效</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-cards">
+      <div class="tcard">
+        <div class="num">AI 智能控制</div>
+        <h4>自动化 · 无人值守系统</h4>
+        <p>工况调节全自动运行，一键启动即可；软件嵌入喷嘴自动算法，1 分钟内找到最接近目标风速的喷嘴组合；可自由配置试验任务，测试完成后自动切换下一工况。</p>
+        <span class="hl">完全无需人工干预</span>
+      </div>
+      <div class="tcard">
+        <div class="num">除霜提速 12 倍</div>
+        <h4>热氟融霜技术</h4>
+        <p>除霜时间由传统方式的 60 分钟以上缩短至约 5 分钟，除霜过程温度升高小于 5℃，能耗小，支持自动操作（同时保留手动操作）。</p>
+        <span class="hl">&gt;60min → ≈5min</span>
+      </div>
+      <div class="tcard">
+        <div class="num">预测性维护</div>
+        <h4>无感维修技术</h4>
+        <p>实时监测设备运行状态，提前察觉异常并预警，在实验室空闲时维护设备，避免测试中断；支持远程集中管理平台，借助大数据模型预测部件寿命。</p>
+        <span class="hl">远程监控 · 预警推送</span>
+      </div>
+      <div class="tcard">
+        <div class="num">交付提速</div>
+        <h4>分布式电控技术</h4>
+        <p>实验室布局更紧凑，减少电柜占地；减少现场二次施工，将施工周期由 15 日缩短至 5 日；实现强弱电绝对分离，减少干扰，便于后期维护。</p>
+        <span class="hl">施工周期 15日 → 5日</span>
+      </div>
+      <div class="tcard">
+        <div class="num">废热利用</div>
+        <h4>热回收技术</h4>
+        <p>在空气处理机组内增设热回收换热盘管，回收压缩机排气冷凝热；40℃ 以下工况无需电加热辅助，仅靠制冷主机与热回收系统即可稳定运行。</p>
+        <span class="hl">PLC 智能分配算法</span>
+      </div>
+      <div class="tcard">
+        <div class="num">数据驱动</div>
+        <h4>AI 试验数据判定</h4>
+        <p>自动获取测试方案、自动判稳与数据保存，对测试曲线智能拟合分析，自动输出判定结论并上传报告，测试数据实时保存生成结构化报告。</p>
+        <span class="hl">自动判稳 · 结构化报告</span>
+      </div>
+    </div>
+
+    <!-- 同规能耗比 -->
+    <div class="energy">
+      <h3>同规能耗比实测数据</h3>
+      <p class="sub">传统型系统 vs 衍胜智能节能型系统 · 相同工况同负载条件 · 综合节能率 46%~68%</p>
+      <div class="energy-bars">
+        <div class="ebar">
+          <div class="eb-head"><b>3HP 焓差室 · 名义制冷</b><span>传统 55.2 kWh → 节能 27.5 kWh</span></div>
+          <div class="eb-track">
+            <div class="bar"><i style="width:50%"></i></div>
+            <span class="pct">50.2%</span>
+          </div>
+        </div>
+        <div class="ebar">
+          <div class="eb-head"><b>5HP 焓差室 · 名义制热</b><span>传统 58.6 kWh → 节能 21.9 kWh</span></div>
+          <div class="eb-track">
+            <div class="bar"><i style="width:63%"></i></div>
+            <span class="pct">62.6%</span>
+          </div>
+        </div>
+        <div class="ebar">
+          <div class="eb-head"><b>12HP 焓差室 · 潮态工况</b><span>传统 75.6 kWh → 节能 27.6 kWh</span></div>
+          <div class="eb-track">
+            <div class="bar"><i style="width:63%"></i></div>
+            <span class="pct">63.4%</span>
+          </div>
+        </div>
+        <div class="ebar">
+          <div class="eb-head"><b>3HP 焓差室 · 潮态工况</b><span>传统 66.9 kWh → 节能 21.2 kWh</span></div>
+          <div class="eb-track">
+            <div class="bar"><i style="width:68%"></i></div>
+            <span class="pct">68.3%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 业绩案例 ===== -->
+<section class="section alt" id="cases">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">业绩案例</span>
+      <h2 class="section-title">深受头部企业与权威检测机构信赖</h2>
+      <p class="section-sub">实验室产品深受用户信赖，已成为多家世界级家电品牌、权威第三方检测机构与知名企业的合作伙伴。</p>
+    </div>
+    <div class="case-wrap">
+      <div>
+        <div class="clients">
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>赛宝检测</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>美的集团</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>海尔集团</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>海信集团</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>TCL</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>莱茵检测</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>长虹美菱</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>创维集团</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>兆易创新</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>芜湖奇瑞</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>东芝家电</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>新飞</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>万和电气</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>美博集团</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>美智光电</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>飞利浦</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>TCL德龙</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>志格空调</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>美芝制冷</span>
+          <span class="client"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>杉川科技</span>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:20px;font-weight:900;margin-bottom:6px">2025-2026 代表项目</h3>
+        <p style="font-size:13px;color:var(--slate);margin-bottom:10px">涵盖焓差室建设与节能改造、CVP/动态能效测试、水机实验室、多工位检测平台等</p>
+        <div class="case-list">
+          <div class="case-item"><span class="yr">2026</span><div><b>智能 5HP 节能防爆焓差实验室（含动态能效）</b><span>工业和信息化部电子第五研究所（赛宝）</span></div></div>
+          <div class="case-item"><span class="yr">2026</span><div><b>智能 10HP 节能焓差实验室（含动态能效及 CVP）</b><span>广州 TCL 制冷设备有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2026</span><div><b>4 工位洗碗机性能实验室</b><span>莱茵技术监督服务（广东）有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2026</span><div><b>实验室压缩机节能改造三期</b><span>广州美的华凌冰箱有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2026</span><div><b>智能 6HP 节能防爆焓差实验室 ×2</b><span>海信（广东）空调有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2026</span><div><b>3 套焓差实验室节能、R290 改造项目（含 CVP）</b><span>中山长虹电器有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2025</span><div><b>量热计及单体耐久防爆间联动排风</b><span>广东美芝制冷设备有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2025</span><div><b>弗德里希 600RT 水冷冷(热)水机组试验装置</b><span>浙江弗德里希制冷设备有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2025</span><div><b>洗衣机新增 30 / 60 / 147 工位实验室</b><span>创维电器股份有限公司</span></div></div>
+          <div class="case-item"><span class="yr">2025</span><div><b>3HP / 5HP 节能智能焓差实验室（含 CVP+动态能效）</b><span>安徽美博智能科技有限公司</span></div></div>
+        </div>
+        <div class="case-more">2025-2026 年累计完成 60+ 套实验室项目 →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 资质荣誉 ===== -->
+<section class="section" id="honor">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">资质荣誉</span>
+      <h2 class="section-title">规范化治理 · 标准化运营</h2>
+      <p class="section-sub">坚持规范化、标准化，合规管理、依法纳税、保障安全，切实履行社会责任。</p>
+    </div>
+    <div class="honor-grid">
+      <div class="honor">
+        <div class="hico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <b>GB/T 19001-2016</b>
+        <span>质量管理体系认证</span>
+      </div>
+      <div class="honor">
+        <div class="hico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M6 6h12v12H6z"/></svg></div>
+        <b>GB/T 24001-2016</b>
+        <span>环境管理体系认证</span>
+      </div>
+      <div class="honor">
+        <div class="hico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M8 12h8"/></svg></div>
+        <b>GB/T 45001-2020</b>
+        <span>职业健康安全管理体系认证</span>
+      </div>
+      <div class="honor">
+        <div class="hico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div>
+        <b>中国节能协会</b>
+        <span>会员单位</span>
+      </div>
+      <div class="honor">
+        <div class="hico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 4.6L18.5 8l-3.5 3.4.9 5-4.9-2.7-4.9 2.7.9-5L4 8l4.7-1.4z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg></div>
+        <b>实用新型专利</b>
+        <span>一种实验室用热氟冲霜系统</span>
+      </div>
+    </div>
+    <div class="standard-box">
+      <h4>团体标准发起单位之一</h4>
+      <div class="st">《质量分级及"领跑者"评价要求 房间空气调节器空气焓值法测试装置》</div>
+      <div class="st">《质量分级及"领跑者"评价要求 空调器平衡环境型房间量热计法测试装置》</div>
+      <p style="font-size:13px;color:var(--slate);margin-top:12px">公司努力促使节能新技术、智能化新技术在客户群得到快速推广，为增强用户体验、促进节能降耗贡献力量。</p>
+    </div>
+    <div class="patent-box">
+      <h4><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 4.6L18.5 8l-3.5 3.4.9 5-4.9-2.7-4.9 2.7.9-5L4 8l4.7-1.4z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>自主知识产权</h4>
+      <div class="patent-grid">
+        <div class="patent-item full"><span>一种实验室用热氟冲霜系统</span></div>
+        <div class="patent-item"><b>专利类型</b><span>实用新型专利</span></div>
+        <div class="patent-item"><b>专利号</b><span>ZL 2025 2 0552205.4</span></div>
+        <div class="patent-item"><b>授权公告号</b><span>CN 224201940 U</span></div>
+        <div class="patent-item"><b>专利申请日</b><span>2025年03月27日</span></div>
+        <div class="patent-item"><b>授权公告日</b><span>2026年05月05日</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 服务保障 ===== -->
+<section class="section dark" id="service">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">服务保障</span>
+      <h2 class="section-title">360 全方位服务 · 3 全面 · 6 满意 · 0 投诉</h2>
+      <p class="section-sub">公司秉承"360 全方位服务"的服务理念，在全国检测装备市场精耕细作，建立起完善的售后服务体系和标准。</p>
+    </div>
+    <div class="service-grid">
+      <div class="svc">
+        <div class="snum">3</div>
+        <b>三全服务</b>
+        <ul>
+          <li>全过程：售前咨询、推介、设计、选型，售中送货、安装、调试、培训，售后指导、回访、保养、维修</li>
+          <li>全天候：7×24 小时服务电话，随时随地满足服务需求</li>
+          <li>全球化：佛山、合肥、青岛、杭州直属服务中心，东南亚、中东签约服务中心</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="snum">6</div>
+        <b>六满意</b>
+        <ul>
+          <li>质量满意 · 设计满意 · 安装满意</li>
+          <li>使用满意 · 服务满意 · 维修满意</li>
+          <li style="margin-top:10px">以卓越满足用户需求为己任，每一环节都以用户满意为最终衡量标准</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="snum">0</div>
+        <b>零投诉承诺</b>
+        <ul>
+          <li>健全的售后服务管理制度与服务标准</li>
+          <li>科学的服务流程、本地化的服务网络</li>
+          <li>一流硬件设备 + 快捷配件发送网络</li>
+          <li>全国市场 <b style="color:#5fe0ab">12 小时内</b>解决所有故障</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-banner">
+      <b>实验室设备故障？全国 12 小时响应解决</b>
+      <div class="ph">
+        <a href="tel:18928129781" style="color:#04231a">189 2812 9781</a>
+        <small>7×24 小时服务热线 · 全天候待命</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系我们 ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">联系我们</span>
+      <h2 class="section-title">获取节能实验室整体解决方案</h2>
+      <p class="section-sub">无论新建、改造还是搬迁，我们提供从方案设计到交付运维的全过程服务。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>公司地址</b><span>佛山市顺德区容桂街道华天东六路1号<br>毅的龙实业园5栋101室</span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><b>7×24 服务热线</b><span><a href="tel:18928129781">189 2812 9781</a></span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div><b>业务联系人 · 高先生</b><span><a href="tel:19250416351">192 5041 6351</a></span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div><b>咨询邮箱</b><span><a href="mailto:19250416351@163.com">19250416351@163.com</a></span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><b>产品测试领域</b><span>制冷设备 · 储能产品 · 新能源汽车热管理 · 家用空调 · 电冰箱 · 洗衣机 · 洗碗机 · 热水器</span></div>
+        </div>
+      </div>
+      <div class="center-net">
+        <h4>全球服务网络</h4>
+        <div class="net-grid">
+          <div class="net"><b>佛山</b><span>直属服务中心 · 总部</span></div>
+          <div class="net"><b>合肥</b><span>直属服务中心</span></div>
+          <div class="net"><b>青岛</b><span>直属服务中心</span></div>
+          <div class="net"><b>杭州</b><span>直属服务中心</span></div>
+          <div class="net"><b>东南亚</b><span>签约服务中心</span></div>
+          <div class="net"><b>中东</b><span>签约服务中心</span></div>
+        </div>
+        <div style="margin-top:22px;background:var(--mint-soft);border-radius:12px;padding:18px 20px;border:1px solid #bfe8d2">
+          <b style="color:var(--teal);font-size:15px">只做最节能的试验设备</b>
+          <p style="font-size:13px;color:#33475c;margin-top:6px">以"技术领先、做工精良、测量准确、运行可靠"的产品把"价值"传递给用户，共创财富，让我们身边的每一个人生活得更美好。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>广东衍胜自动化设备有限公司</b>
+        <p>民营高新科技企业，专业从事环境参数精确控制与工业自动化集成系统的设计、开发、制造。以"只做最节能的试验设备"为使命，努力成为全球检测装备行业的主要品牌。</p>
+      </div>
+      <div class="foot-col">
+        <b>快速导航</b>
+        <a href="#about">关于我们</a>
+        <a href="#business">核心业务</a>
+        <a href="#tech">技术实力</a>
+        <a href="#cases">业绩案例</a>
+      </div>
+      <div class="foot-col">
+        <b>联系方式</b>
+        <a href="tel:18928129781">7×24 热线：189 2812 9781</a>
+        <a href="tel:19250416351">业务联系人（高先生）：192 5041 6351</a>
+        <a href="mailto:19250416351@163.com">邮箱：19250416351@163.com</a>
+        <a href="#contact">佛山市顺德区容桂街道华天东六路1号</a>
+        <a href="#contact">毅的龙实业园5栋101室</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 广东衍胜自动化设备有限公司 版权所有</span>
+      <span>以"环境 + 测量"为技术路线 · 只做最节能的试验设备</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 移动端导航
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('navMenu');
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
+      menu.classList.toggle('open');
+    });
+    menu.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        menu.classList.remove('open');
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
