@@ -292,6 +292,11 @@ footer{background:#071a2a;color:#9db6c9;padding:56px 0 0}
   .nav-dropdown::before{display:none}
   .nav-dropdown a{padding:12px 14px}
 }
+
+.tech-intro .img-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tech-intro .img-grid .img{aspect-ratio:1/1}
+@media(max-width:900px){.tech-intro .img-grid{grid-template-columns:1fr}}
+
 </style>
 
 <!-- 百度自动推送 -->
@@ -374,8 +379,13 @@ footer{background:#071a2a;color:#9db6c9;padding:56px 0 0}
     </div>
 
     <div class="tech-intro">
-      <div class="img">
-        <img src="https://aka.doubaocdn.com/s/bRP7g8FHHb" alt="制冷机组三维设计 SOLIDWORKS" style="width:100%;height:100%;object-fit:cover">
+      <div class="img-grid">
+        <div class="img">
+          <img src="https://aka.doubaocdn.com/s/Zksx9iwXVO" alt="制冷机组三维设计 集成式压缩冷凝机组" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div class="img">
+          <img src="https://aka.doubaocdn.com/s/rdq7vA8vjg" alt="制冷机组三维设计 立式储液换热机组" style="width:100%;height:100%;object-fit:cover">
+        </div>
       </div>
       <div>
         <h3 style="font-size:24px;font-weight:900;margin-bottom:16px">超级节能技术 · 集中冷站</h3>
